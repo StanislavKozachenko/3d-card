@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	height: 100vh;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 1000px;
+}
+.car {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.car img {
+	z-index: 2;
+	height: 25vh;
+	width: 25vh;
+	transition: all 0.75s ease-out;
+}
+.circle {
+	position: absolute;
+	height: 15vh;
+	width: 15vh;
+	border-radius: 50%;
+	background: rgb(50,40,108);
+	background: linear-gradient(158deg, rgba(50,40,108,1) 35%, rgba(249,255,98,1) 71%);
+	z-index: 1;
+}
+.container {
+	min-height: 60vh;
+	min-width: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container:hover {
+	cursor: pointer;
+}
+.card {
+	transform-style: preserve-3d;
+	height: 60vh;
+	width: 50%;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.2), 0 10px 30px rgba(0,0,0,0.1);
+	border-radius: 2%;
+}
+.title {
+	font-family: 'Teko', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 10px 30px;
+	margin-bottom: 5px;
+	transition: all 0.75s ease-out;
+}
+.description {
+	font-family: 'Teko', sans-serif;
+	font-size: 21px;
+	margin: 2px 30px;
+	transition: all 0.75s ease-out;
+}
+.buttons {
+	margin: 2px 30px;
+	margin-top: 10px;
+	transition: all 0.75s ease-out;
+}
+.buttons button {
+	justify-content: space-between;
+	border: 0;
+	background-color: #f9ff62;
+	width: 40px;
+	height: 25px;
+	transition: all 0.75s ease-out;
+}
+.buttons button:active {
+	background-color:#ffef42;
+}
+.purchase {
+	margin: 2px 30px;
+	margin-top: 30px;
+	border: 0;
+	background-color: #f9ff62;
+	width: calc(100% - 60px);
+	height: 25px;
+	transition: all 0.75s ease-out;
+}
+.purchase:active {
+	background-color:#ffef42;
+}
